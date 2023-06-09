@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+	<div class="hero">
+		<img src="{{ asset('img/hero1.jpg') }}" alt="Logo">
+	</div>
+	<main>
+
+
+		<section>
+			<h2>Nos Derniers Produits</h2>
+			<div
+				class="articles">
+				<!-- Insérez ici vos articles de tissus -->
+				<article>
+					<div class="content">
+
+						<h3>Nappes</h3>
+						<p>Belles nappes pour votre table</p>
+					</div>
+					<div class="image">
+						<img src="{{ asset('img/Nappes.jpg') }}" alt="Logo"></div>
+				</article>
+				<article>
+					<div class="content">
+
+						<h3>Serviettes</h3>
+						<p>Jolie serviettes</p>
+					</div>
+					<div class="image"><img src="{{ asset('img/Serviettes.jpg') }}" alt="Logo"></div>
+				</article>
+				<article>
+					<div class="content">
+						<h3>Coussins</h3>
+						<p>Sympathique coussins décoratifs</p>
+					</div>
+					<div class="image"><img src="{{ asset('img/Coussins.jpg') }}" alt="Logo"></div>
+				</article>
+				<article>
+					<div class="content">
+
+						<h3>Revêtement</h3>
+						<p>Pour protéger vos canapés et autres</p>
+					</div>
+					<div class="image"><img src="{{ asset('img/revetements.jpg') }}" alt="Logo"></div>
+				</article>
+			</div>
+		</section>
+	</main>
+
+
+{% endblock %}

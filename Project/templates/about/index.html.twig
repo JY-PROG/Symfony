@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AboutController!
+{% endblock %}
+
+{% block body %}
+	<section class="about">
+		<h2>A propos de Nous
+		</h2>
+
+		<div class="boutique">
+			<div class="presentation">
+				<h2>Bienvenue chez Le Couturier, notre boutique de renom située au Groenland.</h2>
+				<p>
+					Nichée au cœur de cette contrée arctique, 
+					                nous vous invitons à découvrir nos créations uniques alliant savoir-faire traditionnel et design avant-gardiste.
+					                 Nos couturiers passionnés confectionnent avec soin des pièces extraordinaires en utilisant des matériaux de haute qualité.
+					                  Chez Le Couturier, vous trouverez des vêtements et accessoires raffinés qui mettront en valeur votre style.
+					                   Nous privilégions la durabilité et l'éthique, en soutenant les artisans locaux et en adoptant des pratiques 
+					                   respectueuses de l'environnement. Rejoignez-nous au Groenland pour découvrir l'atmosphère chaleureuse de notre
+					                   boutique et plonger dans notre univers enchanteur. Luxe, sophistication et paysages majestueux se rencontrent chez Le Couturier.</p>
+			</div>
+			<img src="{{ asset('img/shop.png') }}" style=" width:30rem;" alt="Logo">
+		</div>
+
+		<hr style=" border:1px solid #000; width: 60%; margin-top: 1rem;"/>
+		<div class="maps">
+        <h2>Nous Retrouver</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d854657.245910648!2d-45.22398861763888!3d62.4268426327746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1686233781389!5m2!1sfr!2sfr"  height="450" style="border:0; width: 50%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+</section>{% endblock %}

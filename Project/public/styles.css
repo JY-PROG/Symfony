@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@300&display=swap");
+
+* {
+  font-family: "Geologica", sans-serif;
+}
+
+/* Réinitialisation des styles par défaut */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour le header */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: lightsteelblue;
+  padding: 2rem;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: space-between;
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* HomePage / Produits*/
+main,
+section {
+  padding: 20px;
+}
+
+section h2 {
+  padding: 1rem;
+  font-size: 24px;
+}
+
+.hero img {
+  width: 100%;
+
+  border-radius: 0 0 16px 16px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 4rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 35rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #eee;
+  border: 1px solid #000;
+}
+
+article .content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.image {
+  border-radius: 16px;
+}
+.image img {
+  width: 15rem;
+  border-radius: 16px;
+}
+
+/*About */
+
+.about {
+  background-color: #eee;
+}
+.about .boutique {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.boutique .presentation {
+  max-width: 40rem;
+}
+
+.presentation p {
+  line-height: 160%;
+}
+
+.maps {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.maps h2 {
+  font-size: 32px;
+}
+
+/*Contact*/
+
+.contact .all {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5rem;
+  margin-bottom: 11rem;
+}
+
+.all .phone,
+.mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem;
+  gap: 3rem;
+  border: 1px solid #369;
+  border-radius: 16px;
+}
+
+
+/* Styles pour le footer */
+
+footer {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #333;
+  padding: 3rem;
+  color: #fff;
+}
+
+footer ul {
+  font-size: 20px;
+  list-style: none;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer p a {
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/*Connexion*/
+

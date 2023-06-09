@@ -1,0 +1,31 @@
+<header>
+	<div>
+		<h2 style="font-weight: bold;"><a style="text-decoration: none; color: #000;" href="{{path('home')}}">Le Couturier</a></h2>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="{{path('home')}}">Accueil</a></li>
+			<li><a href="{{path('produits')}}">Produits</a></li>
+			<li><a href="{{path('about')}}">À Propos de Nous</a></li>
+			<li><a href="{{path('contact')}}">Contact</a></li>
+			{% if is_granted('IS_AUTHENTICATED_FULLY') %}
+        <ul class="navbar-nav d-flex list-unstyled align-items-center">
+          <!-- Les liens ne seront pas affichés, sauf un bouton de déconnexion -->
+          <li class="">
+            <a class="" href="{{ path('app_logout') }}">Déconnexion</a>
+          </li>
+        </ul>
+      {% else %}
+        <ul >
+          <li>
+            <a class="" href="{{ path('app_login') }}">Se connecter</a>
+          </li>
+          <li>
+            <a class="" href="{{ path('app_register') }}">Créer un compte</a>
+          </li>
+        </ul>
+      {% endif %}
+		</ul>
+	</nav>
+</header>
+
